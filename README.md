@@ -24,7 +24,7 @@ Welcome to the **Interactive Rating Component** project! This is a front-end cha
 
 ### Links
 
-- **Live Site URL:** [Interactive Rating Component](https://your-live-site-url.com)
+- **Live Site URL:** [Interactive Rating Component]([https://your-live-site-url.com](https://hossamelrawy.github.io/Interactive-rating-component/))
 - **Frontend Mentor Challenge:** [Interactive Rating Component Challenge](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI)
 
 ## Features
