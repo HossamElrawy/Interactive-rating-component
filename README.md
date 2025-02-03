@@ -19,8 +19,8 @@ Welcome to the **Interactive Rating Component** project! This is a front-end cha
 
 ### Screenshot
 
-![Desktop Preview](./screenshots/desktop-design.png)
-![Mobile Preview](./screenshots/mobile-design.png)
+![Desktop Preview](./screenshots/desktop-design.jpg)
+![Mobile Preview](./screenshots/mobile-design.jpg)
 
 ### Links
 
