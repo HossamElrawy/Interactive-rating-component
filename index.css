@@ -1,0 +1,172 @@
+/* Reset default styles and set box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define CSS variables for colors and fonts */
+:root {
+    --color-primary: hsl(25, 97%, 53%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-light-gray: hsl(217, 12%, 63%);
+    --color-medium-gray: hsl(210, 19%, 18%);
+    --color-dark-blue: hsl(215, 23%, 15%);
+    --color-very-dark-blue: hsl(228, 11%, 9%);
+    --font-family: "Overpass", sans-serif;
+    --font-size-small: 13px;
+    --font-size-medium: 16px;
+    --border-radius: 16px;
+    --border-radius-circle: 50px;
+}
+
+/* Body styles: Center content and set background color */
+body {
+    background-color: var(--color-very-dark-blue);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family);
+}
+
+/* Main container styles */
+main {
+    background-color: var(--color-dark-blue);
+    border-radius: var(--border-radius);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    width: 352px;
+}
+
+/* First container (rating selection screen) */
+.rating-container {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    height: auto;
+}
+
+/* Star icon styling */
+.star-icon {
+    background-color: var(--color-medium-gray);
+    padding: 8px;
+    border-radius: var(--border-radius-circle);
+}
+
+/* Heading text styling */
+.how-text {
+    color: var(--color-white);
+    margin-top: 8px;
+}
+
+/* Description text styling */
+.req-text,
+.app-text {
+    color: var(--color-light-gray);
+    font-size: var(--font-size-small);
+}
+
+/* Rating buttons (labels for radio inputs) */
+label {
+    background-color: var(--color-medium-gray);
+    border: none;
+    color: var(--color-light-gray);
+    padding: 12px 18px 11px;
+    border-radius: var(--border-radius-circle);
+    font-weight: 700;
+    font-size: var(--font-size-medium);
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hide radio input elements */
+input[type="radio"] {
+    display: none;
+}
+
+/* Hover effect on rating buttons */
+label:hover {
+    background-color: var(--color-primary);
+    color: var(--color-very-dark-blue);
+}
+
+/* Selected rating button styling */
+input[type="radio"]:checked + label {
+    background-color: var(--color-white);
+    color: var(--color-very-dark-blue);
+}
+
+/* Container for rating buttons */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    border: none;
+}
+
+/* Submit button styling */
+.submit-button {
+    border: none;
+    background-color: var(--color-primary);
+    color: var(--color-very-dark-blue);
+    width: 100%;
+    padding: 12px;
+    border-radius: var(--border-radius-circle);
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for submit button */
+.submit-button:hover {
+    background-color: var(--color-white);
+}
+
+/* Thank you illustration styling */
+.thank-you-icon {
+    width: 140px;
+}
+
+/* Second container (thank you screen) */
+.thank-you-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Display selected rating message */
+.selection-text {
+    background-color: var(--color-medium-gray);
+    color: var(--color-primary);
+    padding: 8px 12px 6px;
+    border-radius: var(--border-radius);
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Thank you heading styling */
+.thank-text {
+    color: var(--color-white);
+}
+
+/* Appreciation text styling */
+.app-text {
+    padding: 0 6px;
+    text-align: center;
+    line-height: 20px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 800px) {
+    main {
+        width: 340px;
+    }
+}
+
+/* Hide container utility class */
+.hide-con {
+    display: none;
+}

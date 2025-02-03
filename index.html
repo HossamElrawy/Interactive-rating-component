@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="index.css">
+  
+  <title>Frontend Mentor | Interactive Rating Component</title>
+</head>
+<body>
+  <main>
+    <!-- Rating Selection Container -->
+    <div class="rating-container js-rating-container">
+      <!-- Star Icon -->
+      <div>
+        <img class="star-icon" src="images/icon-star.svg" alt="Star icon">
+      </div>
+      
+      <!-- Heading -->
+      <h2 class="how-text">
+        How did we do?
+      </h2>
+      
+      <!-- Description -->
+      <p class="req-text">
+        Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!
+      </p>
+      
+      <!-- Rating Options -->
+      <fieldset class="buttons">
+        <legend class="hide-con">Rating Options</legend> <!-- Hidden legend for accessibility -->
+        <input type="radio" id="option1" name="options" value="1">
+        <label for="option1" class="button">1</label>
+
+        <input type="radio" id="option2" name="options" value="2">
+        <label for="option2" class="button">2</label>
+
+        <input type="radio" id="option3" name="options" value="3">
+        <label for="option3" class="button">3</label>
+
+        <input type="radio" id="option4" name="options" value="4">
+        <label for="option4" class="button">4</label>
+
+        <input type="radio" id="option5" name="options" value="5">
+        <label for="option5" class="button">5</label>
+      </fieldset>
+
+      <!-- Submit Button -->
+      <button class="submit-button js-submit-button">
+        S U B M I T
+      </button>
+    </div>
+
+    <!-- Thank You Message Container (Initially Hidden) -->
+    <div class="thank-you-container js-thank-you-container hide-con">
+      <!-- Thank You Illustration -->
+      <img class="thank-you-icon" src="images/illustration-thank-you.svg" alt="Thank you illustration">
+      
+      <!-- User's Selected Rating -->
+      <p class="selection-text js-selection-text"></p>
+      
+      <!-- Thank You Heading -->
+      <h2 class="thank-text">
+        Thank you!
+      </h2>
+      
+      <!-- Appreciation Message -->
+      <p class="app-text">
+        We appreciate you taking the time to give a rating. If you ever need more support, 
+        don’t hesitate to get in touch!
+      </p>
+    </div>
+  </main>
+
+  <!-- JavaScript File -->
+  <script src="index.js" type="module"></script>
+</body>
+</html>
